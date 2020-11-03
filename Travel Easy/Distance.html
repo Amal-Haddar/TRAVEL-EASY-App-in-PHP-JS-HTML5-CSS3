@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Travel Easy</title>
+      <link rel="stylesheet" href="responsive.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	  <script src="https://code.jquery.com/jquery-1.11.2.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+     
+    <header id="h_distance">
+
+                     <div class="navbar">
+        <a href="#" class="toggle" id="navHamburger">
+            <i class="fas fa-bars"></i>
+        </a>
+        <a href="#" class="brand">Travel Easy</a>
+        <div class="left">
+		    <a href="index.php" class="link">Home</a>
+            <a href="weather.html" class="link">Weather</a>
+            <a href="map.html" class="link">Map</a>
+			<a href="Distance.html" class="link">Distance</a>
+			<a href="hotels.html" class="link">Hotel</a>
+			<a href="contact.html" class="link">Contact</a>
+			
+        </div>
+        <div class="right">
+            <a href="logout.php" class="link">Logout</a>
+        </div>
+    </div>
+             	<p id="citation">  Travel and break all the Distance !</p> 
+                 
+    </header>
+			
+	<section>
+	
+	 <p id="titre">  Calculate distance between two cities </p1> </br>
+	
+	                    <span id="error"> </span>
+ 
+ <div class="recherche_p">
+
+        
+		    <form id="searchthis" >
+
+                 <input id="from" name="from" type="text" placeholder="From" />
+				 <input id="to" name="to" type="text" placeholder="To" />
+			     
+				 
+                 <input id="submitDistance" type="button" value="Search" onclick="calcRoute();" />
+				 
+            </form>
+		
+		
+
+</div>
+
+<div class="container-fluid"> 
+
+    <div id="googleMap"> </div>
+	<div id="output"> </div>
+
+</div>
+
+    </section>
+
+                 
+        <footer>
+                  
+                   <img id ="location_icon" src="images/location.png">
+                   <p id="adress"> Manouba, ISAMM 1ING Amal&Iheb </p>
+                   <p id="newsletter"> Newsletter </p>
+                   <input class="news" placeholder="Your email address" />
+                   <div id="icon">
+                   <img class="icons" src="images/twitter.png">
+                   <img class="icons" src="images/fb.png">
+                   <img class="icons" src="images/printest.png">
+                   <img class="icons" src="images/g+.png">
+                   <img class="icons" src="images/instagram.png">
+                   <img class="icons" src="images/trip-advisor.png">
+                   </div>
+
+                   <hr id="hr_footer"> </hr>
+				   <p id="copy"> Copyrights 2019,Travel Easy, all rights reserved </p>
+        </footer>
+    
+
+
+  
+  
+ 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPYPAdmh2FmolMQymdmwRrzfCN02iD_os&libraries=places"></script>
+   
+	
+	<script src="JS/Vue/distanceVue.js"></script> 
+	<script src="JS/Controller/distanceController.js"></script>
+	<script src="JS/Controller/navController.js"></script> 
+    
+	
+</body>
+</html>
